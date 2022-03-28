@@ -1,8 +1,9 @@
 import React from 'react';
-import { Box, Heading, Center, Image, Text, Button } from 'native-base';
+import { Box, Heading, Center, Image, Text } from 'native-base';
 
 const ShoppingCart = () => {
   return(
+    <Box h="90%" style={{justifyContent: 'center'}}>
     <Center>
       <Box w="90%">
         <Image
@@ -11,7 +12,7 @@ const ShoppingCart = () => {
           alt="carrito"
           my={7}
           source={{
-            uri: "https://cdn-icons.flaticon.com/png/512/4201/premium/4201454.png?token=exp=1645154129~hmac=374e416cb66fcb41fd04ccdd2a060258"
+            uri: "https://cdn-icons-png.flaticon.com/512/4290/4290854.png"
           }} />
         <Heading
           alignSelf="center"
@@ -31,10 +32,10 @@ const ShoppingCart = () => {
             ¡No tienes artículos en tu carrito!
         </Heading>
 
-        <Text my={2} alignSelf="center">Los artículos agregados al carrito aparecerán aquí</Text>
-        <Button mt={4} variant="subtle" size="lg" colorScheme="indigo">Ir a la página principal</Button>
+        <Text my={2} alignSelf="center">Agrega articulos a tu carrito desde la página principal</Text>
       </Box>
     </Center>
+    </Box>
   )
 }
 

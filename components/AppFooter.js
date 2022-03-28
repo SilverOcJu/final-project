@@ -3,12 +3,9 @@ import {NativeBaseProvider, Box, Center, HStack, Pressable, Icon, Text} from 'na
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 import { } from 'react-native';
 
-const AppFooter = () => {
-  const [seleccionado, setSeleccionado] = useState(0);
-
+const AppFooter = ({seleccionado, setSeleccionado}) => {
   return (
-    <NativeBaseProvider>
-      <Box flex={1} bg="white" safeAreaTop width="100%" alignSelf="center">
+      <Box flex={1} bg="white" safeAreaBottom width="100%" alignSelf="center">
         <Center flex={1}></Center>
         <HStack bg="info.800" alignItems="center" safeAreaBottom shadow={6}>
           {/* Para el botón de Home */}
@@ -34,7 +31,6 @@ const AppFooter = () => {
           </Pressable>
         </HStack>
       </Box>
-    </NativeBaseProvider>
   );
 };
 
